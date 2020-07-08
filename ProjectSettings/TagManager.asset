@@ -7,6 +7,12 @@ TagManager:
   - Ground
   - Bullets
   - Enemy
+  - Bullet
+  - Enemies
+  - Wall
+  - EnemyWalkSpawnPoint
+  - EnemyJumpSpawnPoint
+  - Exit
   layers:
   - Default
   - TransparentFX
