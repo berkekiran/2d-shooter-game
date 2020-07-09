@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class UIController : MonoBehaviour
     public Text levelText;
     private int levelCount = 0;
     public static bool levelUp = false;
+    public GameObject player;
 
     void Start()
     {
@@ -25,5 +27,8 @@ public class UIController : MonoBehaviour
             levelCount += 5;
             levelUp = false;
         }
+
+        if(player == null)
+            SceneManager.LoadScene("ReplayMenu");  
     }
 }

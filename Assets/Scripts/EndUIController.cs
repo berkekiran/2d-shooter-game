@@ -7,10 +7,12 @@ using UnityEngine.UI;
 public class EndUIController : MonoBehaviour
 {
     public Text scoreText;
+    public AudioSource audioSourceGameOver;
+    public AudioSource buttonClick;
 
     void Start()
     {
-        
+        audioSourceGameOver.Play();
     }
 
     void Update()
@@ -19,6 +21,14 @@ public class EndUIController : MonoBehaviour
     }
 
     public void Replay(){
+        buttonClick.Play();
+        StartCoroutine(Wait());
+            
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(buttonClick.clip.length);
         SceneManager.LoadScene("Game");
     }
 }
