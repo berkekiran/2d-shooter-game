@@ -10,5 +10,6 @@ Version 1
 Version 2
 
 ![2dshootergamev2](https://user-images.githubusercontent.com/22173853/87148149-8afe9d00-c2b6-11ea-9119-63f9d6753195.png)
-![2dshootergamev2](https://imgur.com/a/rsCYSYV)
+
+![2dshootergamev2](https://user-images.githubusercontent.com/22173853/87150238-5f7db180-c2ba-11ea-853a-b64fcc581d5a.gif)
 
